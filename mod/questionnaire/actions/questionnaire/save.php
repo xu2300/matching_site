@@ -1,0 +1,86 @@
+<?php
+
+$user = elgg_get_logged_in_user_entity();
+$owner_guid = $user->getGUID();
+//echo($owner_guid);
+$options = array(
+			'type' => 'object',
+			'subtype' => 'questionnaire',
+			'owner_guid' => $owner_guid
+		);
+$entities = elgg_get_entities($options);
+foreach ($entities as $entity) {
+			$entity->delete();
+		}
+//create a new ElggObject
+$questionnaire = new ElggObject();
+$questionnaire->subtype = "questionnaire";
+
+$questionnaire->frequency = get_input('frequency');
+
+$questionnaire->mon1 = get_input('1Mon');
+$questionnaire->tue1 = get_input('1Tue');
+$questionnaire->wen1 = get_input('1Wen');
+$questionnaire->thu1 = get_input('1Thu');
+$questionnaire->fri1 = get_input('1Fri');
+$questionnaire->sat1 = get_input('1Sat');
+$questionnaire->sun1 = get_input('1Sun');
+
+$questionnaire->mon2 = get_input('2Mon');
+$questionnaire->tue2 = get_input('2Tue');
+$questionnaire->wen2 = get_input('2Wen');
+$questionnaire->thu2 = get_input('2Thu');
+$questionnaire->fri2 = get_input('2Fri');
+$questionnaire->sat2 = get_input('2Sat');
+$questionnaire->sun2 = get_input('2Sun');
+
+$questionnaire->mon3 = get_input('3Mon');
+$questionnaire->tue3 = get_input('3Tue');
+$questionnaire->wen3 = get_input('3Wen');
+$questionnaire->thu3 = get_input('3Thu');
+$questionnaire->fri3 = get_input('3Fri');
+$questionnaire->sat3 = get_input('3Sat');
+$questionnaire->sun3 = get_input('3Sun');
+
+$questionnaire->mon4 = get_input('4Mon');
+$questionnaire->tue4 = get_input('4Tue');
+$questionnaire->wen4 = get_input('4Wen');
+$questionnaire->thu4 = get_input('4Thu');
+$questionnaire->fri4 = get_input('4Fri');
+$questionnaire->sat4 = get_input('4Sat');
+$questionnaire->sun4 = get_input('4Sun');
+
+$questionnaire->mon5 = get_input('5Mon');
+$questionnaire->tue5 = get_input('5Tue');
+$questionnaire->wen5 = get_input('5Wen');
+$questionnaire->thu5 = get_input('5Thu');
+$questionnaire->fri5 = get_input('5Fri');
+$questionnaire->sat5 = get_input('5Sat');
+$questionnaire->sun5 = get_input('5Sun');
+
+$questionnaire->mon6 = get_input('6Mon');
+$questionnaire->tue6 = get_input('6Tue');
+$questionnaire->wen6 = get_input('6Wen');
+$questionnaire->thu6 = get_input('6Thu');
+$questionnaire->fri6 = get_input('6Fri');
+$questionnaire->sat6 = get_input('6Sat');
+$questionnaire->sun6 = get_input('6Sun');
+
+$questionnaire->consoles = get_input('consoles');
+$questionnaire->otherconsoles = get_input('otherconsoles');
+
+$questionnaire->mic = get_input('mic');
+
+$questionnaire->playwith = get_input('playwith');
+
+$questionnaire->game1 = get_input('game1');
+$questionnaire->game1 = get_input('game2');
+$questionnaire->game1 = get_input('game3');
+$questionnaire->game1 = get_input('game4');
+$questionnaire->game1 = get_input('game5');
+
+$questionnaire->save();
+
+forward('questionnaire/all');
+
+?>
