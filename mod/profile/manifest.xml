@@ -3,11 +3,11 @@
 	<name>Profile</name>
 	<id>profile</id>
 	<description>Adds user profiles.</description>
-	<author>Core developers</author>
-	<version>1.9</version>
+	<author>Fortitude</author>
+	<version></version>
 	<category>bundled</category>
 	<category>social</category>
-	<website>http://elgg.org/</website>
+	<website>http://projectcuria.com/</website>
 	<copyright>See COPYRIGHT.txt</copyright>
 	<license>GNU General Public License Version 2</license>
 	<activate_on_install>true</activate_on_install>

@@ -31,7 +31,7 @@ function _elgg_cron_init() {
 		'reboot',
 	));
 
-	elgg_register_admin_menu_item('administer', 'cron', 'statistics');
+	//elgg_register_admin_menu_item('administer', 'cron', 'statistics');
 }
 
 /**

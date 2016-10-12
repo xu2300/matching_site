@@ -1,5 +1,5 @@
 <?php
-
+//var_dump(get_input('games'));
 $user = elgg_get_logged_in_user_entity();
 $owner_guid = $user->getGUID();
 //echo($owner_guid);
@@ -15,6 +15,7 @@ foreach ($entities as $entity) {
 //create a new ElggObject
 $questionnaire = new ElggObject();
 $questionnaire->subtype = "questionnaire";
+$questionnaire->access_id = ACCESS_PUBLIC;
 
 $questionnaire->frequency = get_input('frequency');
 
@@ -73,11 +74,8 @@ $questionnaire->mic = get_input('mic');
 
 $questionnaire->playwith = get_input('playwith');
 
-$questionnaire->game1 = get_input('game1');
-$questionnaire->game1 = get_input('game2');
-$questionnaire->game1 = get_input('game3');
-$questionnaire->game1 = get_input('game4');
-$questionnaire->game1 = get_input('game5');
+$questionnaire->games = get_input('games');
+
 
 $questionnaire->save();
 

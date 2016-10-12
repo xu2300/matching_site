@@ -2,7 +2,7 @@
 /**
  * User blog widget display view
  */
-
+/*
 $num = $vars['entity']->num_display;
 
 $options = array(
@@ -29,3 +29,4 @@ if ($content) {
 } else {
 	echo elgg_echo('blog:noblogs');
 }
+*/

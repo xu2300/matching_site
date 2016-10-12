@@ -1,0 +1,58 @@
+[01-Feb-2016 14:02:55 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php on line 144
+[01-Feb-2016 14:02:55 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php on line 144
+[01-Feb-2016 14:02:55 America/Chicago] Exception #1454356975: exception 'RuntimeException' with message 'Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.' in /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php:140
+Stack trace:
+#0 /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Session.php(71): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#1 /home/crpjobs4/public_html/projectcuria.com/engine/classes/ElggSession.php(57): Symfony\Component\HttpFoundation\Session\Session->start()
+#2 /home/crpjobs4/public_html/projectcuria.com/engine/lib/sessions.php(415): ElggSession->start()
+#3 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(1872): _elgg_session_boot()
+#4 [internal function]: _elgg_engine_boot('boot', 'system', NULL)
+#5 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/EventsService.php(56): call_user_func_array('_elgg_engine_bo...', Array)
+#6 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(571): Elgg\EventsService->trigger('boot', 'system', NULL)
+#7 /home/crpjobs4/public_html/projectcuria.com/engine/start.php(78): elgg_trigger_event('boot', 'system')
+#8 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(256): require_once('/home/crpjobs4/...')
+#9 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(72): Elgg\CacheHandler->loadEngine()
+#10 /home/crpjobs4/public_html/projectcuria.com/engine/handlers/cache_handler.php(34): Elgg\CacheHandler->handleRequest(Array, Array)
+#11 {main}
+[01-Feb-2016 14:02:55 America/Chicago] PHP WARNING: 2016-02-01 14:02:55 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 805)
+[01-Feb-2016 14:02:55 America/Chicago] PHP WARNING: 2016-02-01 14:02:55 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 806)
+[01-Feb-2016 14:02:55 America/Chicago] Exception #1454356975: exception 'RuntimeException' with message 'Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.' in /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php:140
+Stack trace:
+#0 /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Session.php(71): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#1 /home/crpjobs4/public_html/projectcuria.com/engine/classes/ElggSession.php(57): Symfony\Component\HttpFoundation\Session\Session->start()
+#2 /home/crpjobs4/public_html/projectcuria.com/engine/lib/sessions.php(415): ElggSession->start()
+#3 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(1872): _elgg_session_boot()
+#4 [internal function]: _elgg_engine_boot('boot', 'system', NULL)
+#5 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/EventsService.php(56): call_user_func_array('_elgg_engine_bo...', Array)
+#6 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(571): Elgg\EventsService->trigger('boot', 'system', NULL)
+#7 /home/crpjobs4/public_html/projectcuria.com/engine/start.php(78): elgg_trigger_event('boot', 'system')
+#8 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(256): require_once('/home/crpjobs4/...')
+#9 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(72): Elgg\CacheHandler->loadEngine()
+#10 /home/crpjobs4/public_html/projectcuria.com/engine/handlers/cache_handler.php(34): Elgg\CacheHandler->handleRequest(Array, Array)
+#11 {main}
+[01-Feb-2016 14:02:55 America/Chicago] PHP WARNING: 2016-02-01 14:02:55 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 805)
+[01-Feb-2016 14:02:55 America/Chicago] PHP WARNING: 2016-02-01 14:02:55 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 806)
+[01-Feb-2016 14:02:55 America/Chicago] Exception #1454356975 : fatal error in exception handler : Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.
+[01-Feb-2016 14:02:55 America/Chicago] Exception #1454356975 : fatal error in exception handler : Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.
+[01-Feb-2016 14:02:56 America/Chicago] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php on line 144
+[01-Feb-2016 14:02:56 America/Chicago] Exception #1454356976: exception 'RuntimeException' with message 'Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.' in /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php:140
+Stack trace:
+#0 /home/crpjobs4/public_html/projectcuria.com/vendor/symfony/http-foundation/Session/Session.php(71): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#1 /home/crpjobs4/public_html/projectcuria.com/engine/classes/ElggSession.php(57): Symfony\Component\HttpFoundation\Session\Session->start()
+#2 /home/crpjobs4/public_html/projectcuria.com/engine/lib/sessions.php(415): ElggSession->start()
+#3 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(1872): _elgg_session_boot()
+#4 [internal function]: _elgg_engine_boot('boot', 'system', NULL)
+#5 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/EventsService.php(56): call_user_func_array('_elgg_engine_bo...', Array)
+#6 /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php(571): Elgg\EventsService->trigger('boot', 'system', NULL)
+#7 /home/crpjobs4/public_html/projectcuria.com/engine/start.php(78): elgg_trigger_event('boot', 'system')
+#8 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(256): require_once('/home/crpjobs4/...')
+#9 /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/CacheHandler.php(72): Elgg\CacheHandler->loadEngine()
+#10 /home/crpjobs4/public_html/projectcuria.com/engine/handlers/cache_handler.php(34): Elgg\CacheHandler->handleRequest(Array, Array)
+#11 {main}
+[01-Feb-2016 14:02:56 America/Chicago] PHP WARNING: 2016-02-01 14:02:56 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 805)
+[01-Feb-2016 14:02:56 America/Chicago] PHP WARNING: 2016-02-01 14:02:56 (CST): "Cannot modify header information - headers already sent by (output started at /home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php:144)" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/elgglib.php (line 806)
+[01-Feb-2016 14:02:56 America/Chicago] Exception #1454356976 : fatal error in exception handler : Failed to start the session because headers have already been sent by "/home/crpjobs4/public_html/projectcuria.com/engine/classes/Elgg/Database.php" at line 144.
+[14-Feb-2016 14:17:02 CST6CDT] PHP WARNING: 2016-02-14 14:17:02 (CST): "Missing argument 2 for elgg_get_simplecache_url(), called in /home/crpjobs4/public_html/projectcuria.com/mod/aalborg_theme/views/default/notifications/css.php on line 68 and defined" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/cache.php (line 117)
+[14-Feb-2016 14:17:02 CST6CDT] PHP WARNING: 2016-02-14 14:17:02 (CST): "Missing argument 2 for elgg_get_simplecache_url(), called in /home/crpjobs4/public_html/projectcuria.com/mod/aalborg_theme/views/default/notifications/css.php on line 71 and defined" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/cache.php (line 117)
+[14-Feb-2016 14:17:02 CST6CDT] PHP WARNING: 2016-02-14 14:17:02 (CST): "Missing argument 2 for elgg_get_simplecache_url(), called in /home/crpjobs4/public_html/projectcuria.com/mod/aalborg_theme/views/default/notifications/css.php on line 74 and defined" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/cache.php (line 117)
+[14-Feb-2016 14:17:02 CST6CDT] PHP WARNING: 2016-02-14 14:17:02 (CST): "Missing argument 2 for elgg_get_simplecache_url(), called in /home/crpjobs4/public_html/projectcuria.com/mod/aalborg_theme/views/default/notifications/css.php on line 77 and defined" in file /home/crpjobs4/public_html/projectcuria.com/engine/lib/cache.php (line 117)

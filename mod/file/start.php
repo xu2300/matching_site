@@ -26,13 +26,13 @@ function file_init() {
 	elgg_extend_view('extensions/item', 'file/enclosure');
 
 	// extend group main page
-	elgg_extend_view('groups/tool_latest', 'file/group_module');
+	//elgg_extend_view('groups/tool_latest', 'file/group_module');
 
 	// Register a page handler, so we can have nice URLs
 	elgg_register_page_handler('file', 'file_page_handler');
 
 	// Add a new file widget
-	elgg_register_widget_type('filerepo', elgg_echo("file"), elgg_echo("file:widget:description"));
+	//elgg_register_widget_type('filerepo', elgg_echo("file"), elgg_echo("file:widget:description"));
 
 	// Register URL handlers for files
 	elgg_register_plugin_hook_handler('entity:url', 'object', 'file_set_url');
@@ -43,13 +43,13 @@ function file_init() {
 	elgg_register_plugin_hook_handler('prepare', 'notification:create:object:file', 'file_prepare_notification');
 
 	// add the group files tool option
-	add_group_tool_option('file', elgg_echo('groups:enablefiles'), true);
+	//add_group_tool_option('file', elgg_echo('groups:enablefiles'), true);
 
 	// Register entity type for search
 	elgg_register_entity_type('object', 'file');
 
 	// add a file link to owner blocks
-	elgg_register_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
+	// elgg_register_plugin_hook_handler('register', 'menu:owner_block', 'file_owner_block_menu');
 
 	// Register actions
 	$action_path = elgg_get_plugins_path() . 'file/actions/file';
@@ -224,11 +224,11 @@ function file_owner_block_menu($hook, $type, $return, $params) {
 		$item = new ElggMenuItem('file', elgg_echo('file'), $url);
 		$return[] = $item;
 	} else {
-		if ($params['entity']->file_enable != "no") {
+		/*if ($params['entity']->file_enable != "no") {
 			$url = "file/group/{$params['entity']->guid}/all";
 			$item = new ElggMenuItem('file', elgg_echo('file:group'), $url);
 			$return[] = $item;
-		}
+		}*/
 	}
 
 	return $return;

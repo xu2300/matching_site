@@ -6,6 +6,7 @@ if (elgg_is_logged_in()) {
 
 $session = elgg_get_session();
 $email = $session->get('emailsent', '');
+$session->remove('emailsent');
 if (!$email) {
 	forward('');
 }

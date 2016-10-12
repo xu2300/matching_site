@@ -7,7 +7,9 @@
 
 elgg_push_breadcrumb(elgg_echo('file'));
 
-elgg_register_title_button();
+
+if(elgg_is_admin_logged_in()){
+elgg_register_title_button();}
 
 $title = elgg_echo('file:all');
 
@@ -24,7 +26,7 @@ $content = elgg_list_entities(array(
 $sidebar = file_get_type_cloud();
 $sidebar .= elgg_view('file/sidebar');
 
-$body = elgg_view_layout('content', array(
+$body = elgg_view_layout('file/views/default//page/layouts/content_alt', array(
 	'filter_context' => 'all',
 	'content' => $content,
 	'title' => $title,

@@ -33,6 +33,20 @@ if ($guid > 0) {
 	$new_file = false;
 }
 
+$allowedExtensions = array("mp4","mp3","flv","mov","m4a","m4v","webm"); 
+   foreach ($_FILES as $file) { 
+     if ($file['tmp_name'] > '') { 
+       if (!in_array(end(explode(".", 
+             strtolower($file['name']))), 
+             $allowedExtensions)) { 
+        $error = elgg_echo('the type is not allowed for upload');
+				register_error($error);
+				forward(REFERER);
+       } 
+     } 
+   } 
+
+
 if ($new_file) {
 	// must have a file if a new file upload
 	if (empty($_FILES['upload']['name'])) {

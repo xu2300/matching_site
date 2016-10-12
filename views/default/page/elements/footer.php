@@ -8,4 +8,5 @@
  *
  */
 
-echo elgg_view_menu('footer', array('sort_by' => 'priority', 'class' => 'elgg-menu-hz'));
+echo "Powered by Fortitude";
+// echo elgg_view_menu('footer', array('sort_by' => 'priority', 'class' => 'elgg-menu-hz'));

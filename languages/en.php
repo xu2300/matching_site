@@ -341,7 +341,7 @@ return array(
 	'river:widget:description' => "Display latest activity",
 	'river:widget:type' => "Type of activity",
 	'river:widgets:friends' => 'Friends activity',
-	'river:widgets:all' => 'All site activity',
+	'river:widgets:all' => 'Activity',
 
 /**
  * Notifications
@@ -843,7 +843,7 @@ These changes will only affect new users on the site.',
 	'revert' => 'Revert',
 
 	'site' => 'Site',
-	'activity' => 'Activity',
+	'activity' => 'Home',
 	'members' => 'Members',
 	'menu' => 'Menu',
 

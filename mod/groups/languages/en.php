@@ -4,88 +4,89 @@ return array(
 	/**
 	 * Menu items and titles
 	 */
-	'groups' => "Groups",
-	'groups:owned' => "Groups I own",
-	'groups:owned:user' => 'Groups %s owns',
-	'groups:yours' => "My groups",
-	'groups:user' => "%s's groups",
-	'groups:all' => "All groups",
-	'groups:add' => "Create a new group",
-	'groups:edit' => "Edit group",
-	'groups:delete' => 'Delete group',
+	'groups' => "Community",
+        'item:group' => "Communities",
+	'groups:owned' => "Community I own",
+	'groups:owned:user' => 'Community %s owns',
+	'groups:yours' => "My Community",
+	'groups:user' => "%s's Community",
+	'groups:all' => "All Community",
+	'groups:add' => "Create a new Community",
+	'groups:edit' => "Edit Community",
+	'groups:delete' => 'Delete Community',
 	'groups:membershiprequests' => 'Manage join requests',
 	'groups:membershiprequests:pending' => 'Manage join requests (%s)',
-	'groups:invitations' => 'Group invitations',
-	'groups:invitations:pending' => 'Group invitations (%s)',
+	'groups:invitations' => 'Community invitations',
+	'groups:invitations:pending' => 'Community invitations (%s)',
 
-	'groups:icon' => 'Group icon (leave blank to leave unchanged)',
-	'groups:name' => 'Group name',
-	'groups:username' => 'Group short name (displayed in URLs, alphanumeric characters only)',
+	'groups:icon' => 'Community icon (leave blank to leave unchanged)',
+	'groups:name' => 'Community name',
+	'groups:username' => 'Community short name (displayed in URLs, alphanumeric characters only)',
 	'groups:description' => 'Description',
 	'groups:briefdescription' => 'Brief description',
 	'groups:interests' => 'Tags',
 	'groups:website' => 'Website',
-	'groups:members' => 'Group members',
+	'groups:members' => 'Community members',
 	'groups:my_status' => 'My status',
-	'groups:my_status:group_owner' => 'You own this group',
-	'groups:my_status:group_member' => 'You are in this group',
-	'groups:subscribed' => 'Group notifications on',
-	'groups:unsubscribed' => 'Group notifications off',
+	'groups:my_status:group_owner' => 'You own this community',
+	'groups:my_status:group_member' => 'You are in this community',
+	'groups:subscribed' => 'Community notifications on',
+	'groups:unsubscribed' => 'Community notifications off',
 
 	'groups:members:title' => 'Members of %s',
 	'groups:members:more' => "View all members",
-	'groups:membership' => "Group membership permissions",
-	'groups:content_access_mode' => "Accessibility of group content",
-	'groups:content_access_mode:warning' => "Warning: Changing this setting won't change the access permission of existing group content.",
+	'groups:membership' => "Community membership permissions",
+	'groups:content_access_mode' => "Accessibility of community content",
+	'groups:content_access_mode:warning' => "Warning: Changing this setting won't change the access permission of existing community content.",
 	'groups:content_access_mode:unrestricted' => "Unrestricted - Access depends on content-level settings",
-	'groups:content_access_mode:membersonly' => "Members Only - Non-members can never access group content",
+	'groups:content_access_mode:membersonly' => "Members Only - Non-members can never access community content",
 	'groups:access' => "Access permissions",
 	'groups:owner' => "Owner",
-	'groups:owner:warning' => "Warning: if you change this value, you will no longer be the owner of this group.",
-	'groups:widget:num_display' => 'Number of groups to display',
-	'groups:widget:membership' => 'Group membership',
-	'groups:widgets:description' => 'Display the groups you are a member of on your profile',
+	'groups:owner:warning' => "Warning: if you change this value, you will no longer be the owner of this community.",
+	'groups:widget:num_display' => 'Number of community to display',
+	'groups:widget:membership' => 'Community membership',
+	'groups:widgets:description' => 'Display the community you are a member of on your profile',
 
-	'groups:widget:group_activity:title' => 'Group activity',
-	'groups:widget:group_activity:description' => 'View the activity in one of your groups',
-	'groups:widget:group_activity:edit:select' => 'Select a group',
-	'groups:widget:group_activity:content:noactivity' => 'There is no activity in this group',
-	'groups:widget:group_activity:content:noselect' => 'Edit this widget to select a group',
+	'groups:widget:group_activity:title' => 'Community activity',
+	'groups:widget:group_activity:description' => 'View the activity in one of your community',
+	'groups:widget:group_activity:edit:select' => 'Select a community',
+	'groups:widget:group_activity:content:noactivity' => 'There is no activity in this community',
+	'groups:widget:group_activity:content:noselect' => 'Edit this widget to select a community',
 
-	'groups:noaccess' => 'No access to group',
+	'groups:noaccess' => 'No access to Community',
 	'groups:permissions:error' => 'You do not have the permissions for this',
-	'groups:ingroup' => 'in the group',
-	'groups:cantcreate' => 'You can not create a group. Only admins can.',
-	'groups:cantedit' => 'You can not edit this group',
-	'groups:saved' => 'Group saved',
-	'groups:save_error' => 'Group could not be saved',
-	'groups:featured' => 'Featured groups',
+	'groups:ingroup' => 'in the Community',
+	'groups:cantcreate' => 'You can not create a Community. Only admins can.',
+	'groups:cantedit' => 'You can not edit this Community',
+	'groups:saved' => 'Community saved',
+	'groups:save_error' => 'Community could not be saved',
+	'groups:featured' => 'Featured' ,
 	'groups:makeunfeatured' => 'Unfeature',
 	'groups:makefeatured' => 'Make featured',
-	'groups:featuredon' => '%s is now a featured group.',
-	'groups:unfeatured' => '%s has been removed from the featured groups.',
-	'groups:featured_error' => 'Invalid group.',
-	'groups:nofeatured' => 'No featured groups',
+	'groups:featuredon' => '%s is now a featured Community.',
+	'groups:unfeatured' => '%s has been removed from the featured Community.',
+	'groups:featured_error' => 'Invalid Community.',
+	'groups:nofeatured' => 'No featured Community',
 	'groups:joinrequest' => 'Request membership',
-	'groups:join' => 'Join group',
-	'groups:leave' => 'Leave group',
+	'groups:join' => 'Join Community',
+	'groups:leave' => 'Leave Community',
 	'groups:invite' => 'Invite friends',
-	'groups:invite:title' => 'Invite friends to this group',
+	'groups:invite:title' => 'Invite friends to this Community',
 	'groups:inviteto' => "Invite friends to '%s'",
-	'groups:nofriends' => "You have no friends left who have not been invited to this group.",
+	'groups:nofriends' => "You have no friends left who have not been invited to this community.",
 	'groups:nofriendsatall' => 'You have no friends to invite!',
-	'groups:viagroups' => "via groups",
-	'groups:group' => "Group",
+	'groups:viagroups' => "via community",
+	'groups:group' => "Community",
 	'groups:search:tags' => "tag",
-	'groups:search:title' => "Search for groups tagged with '%s'",
-	'groups:search:none' => "No matching groups were found",
-	'groups:search_in_group' => "Search in this group",
+	'groups:search:title' => "Search for community tagged with '%s'",
+	'groups:search:none' => "No matching community were found",
+	'groups:search_in_group' => "Search in this Community",
 	'groups:acl' => "Group: %s",
 
 	'discussion:topic:notify:summary' => 'New discussion topic called %s',
 	'discussion:topic:notify:subject' => 'New discussion topic: %s',
 	'discussion:topic:notify:body' =>
-'%s added a new discussion topic to the group %s:
+'%s added a new discussion topic to the Community %s:
 
 Title: %s
 
@@ -98,7 +99,7 @@ View and reply to the discussion topic:
 	'discussion:reply:notify:summary' => 'New reply in topic: %s',
 	'discussion:reply:notify:subject' => 'New reply in topic: %s',
 	'discussion:reply:notify:body' =>
-'%s replied to the discussion topic %s in the group %s:
+'%s replied to the discussion topic %s in the Community %s:
 
 %s
 
@@ -106,12 +107,12 @@ View and reply to the discussion:
 %s
 ',
 
-	'groups:activity' => "Group activity",
-	'groups:enableactivity' => 'Enable group activity',
-	'groups:activity:none' => "There is no group activity yet",
+	'groups:activity' => "Community activity",
+	'groups:enableactivity' => 'Enable community activity',
+	'groups:activity:none' => "There is no community activity yet",
 
-	'groups:notfound' => "Group not found",
-	'groups:notfound:details' => "The requested group either does not exist or you do not have access to it",
+	'groups:notfound' => "Community not found",
+	'groups:notfound:details' => "The requested community either does not exist or you do not have access to it",
 
 	'groups:requests:none' => 'There are no current membership requests.',
 
@@ -122,42 +123,42 @@ View and reply to the discussion:
 
 	'groupforumtopic:new' => "Add discussion post",
 
-	'groups:count' => "groups created",
-	'groups:open' => "open group",
-	'groups:closed' => "closed group",
+	'groups:count' => "community created",
+	'groups:open' => "open community",
+	'groups:closed' => "closed community",
 	'groups:member' => "members",
-	'groups:searchtag' => "Search for groups by tag",
+	'groups:searchtag' => "Search for communities by tag",
 
-	'groups:more' => 'More groups',
-	'groups:none' => 'No groups',
+	'groups:more' => 'More Community',
+	'groups:none' => 'No Community',
 
 	/**
 	 * Access
 	 */
 	'groups:access:private' => 'Closed - Users must be invited',
 	'groups:access:public' => 'Open - Any user may join',
-	'groups:access:group' => 'Group members only',
-	'groups:closedgroup' => "This group's membership is closed.",
+	'groups:access:group' => 'Community members only',
+	'groups:closedgroup' => "This community's membership is closed.",
 	'groups:closedgroup:request' => 'To ask to be added, click the "Request membership" menu link.',
-	'groups:closedgroup:membersonly' => "This group's membership is closed and its content is accessible only by members.",
-	'groups:opengroup:membersonly' => "This group's content is accessible only by members.",
-	'groups:opengroup:membersonly:join' => 'To be a member, click the "Join group" menu link.',
-	'groups:visibility' => 'Who can see this group?',
+	'groups:closedgroup:membersonly' => "This community's membership is closed and its content is accessible only by members.",
+	'groups:opengroup:membersonly' => "This community's content is accessible only by members.",
+	'groups:opengroup:membersonly:join' => 'To be a member, click the "Join community" menu link.',
+	'groups:visibility' => 'Who can see this Community?',
 
 	/**
-	 * Group tools
+	 * Community tools
 	 */
-	'groups:enableforum' => 'Enable group discussion',
+	'groups:enableforum' => 'Enable community discussion',
 	'groups:lastupdated' => 'Last updated %s by %s',
 	'groups:lastcomment' => 'Last comment %s by %s',
 
 	/**
-	 * Group discussion
+	 * Community discussion
 	 */
 	'discussion' => 'Discussion',
 	'discussion:add' => 'Add discussion topic',
 	'discussion:latest' => 'Latest discussion',
-	'discussion:group' => 'Group discussion',
+	'discussion:group' => 'Community discussion',
 	'discussion:none' => 'No discussion',
 	'discussion:reply:title' => 'Reply by %s',
 
@@ -179,7 +180,7 @@ View and reply to the discussion:
 
 	'discussion:search:title' => 'Reply on topic: %s',
 	
-	'admin:groups' => 'Groups',
+	'admin:groups' => 'Community',
 
 	'reply:this' => 'Reply to this',
 
@@ -207,25 +208,25 @@ View and reply to the discussion:
 	'groups:topicsticky' => 'Sticky',
 	'groups:topicisclosed' => 'This discussion is closed.',
 	'groups:topiccloseddesc' => 'This discussion is closed and is not accepting new comments.',
-	'grouptopic:error' => 'Your group topic could not be created. Please try again or contact a system administrator.',
+	'grouptopic:error' => 'Your community topic could not be created. Please try again or contact a system administrator.',
 	'groups:forumpost:edited' => "You have successfully edited the forum post.",
 	'groups:forumpost:error' => "There was a problem editing the forum post.",
 
-	'groups:privategroup' => 'This group is closed. Requesting membership.',
-	'groups:notitle' => 'Groups must have a title',
-	'groups:cantjoin' => 'Can not join group',
-	'groups:cantleave' => 'Could not leave group',
-	'groups:removeuser' => 'Remove from group',
-	'groups:cantremove' => 'Cannot remove user from group',
-	'groups:removed' => 'Successfully removed %s from group',
-	'groups:addedtogroup' => 'Successfully added the user to the group',
-	'groups:joinrequestnotmade' => 'Could not request to join group',
-	'groups:joinrequestmade' => 'Requested to join group',
-	'groups:joined' => 'Successfully joined group!',
-	'groups:left' => 'Successfully left group',
-	'groups:notowner' => 'Sorry, you are not the owner of this group.',
-	'groups:notmember' => 'Sorry, you are not a member of this group.',
-	'groups:alreadymember' => 'You are already a member of this group!',
+	'groups:privategroup' => 'This community is closed. Requesting membership.',
+	'groups:notitle' => 'Community must have a title',
+	'groups:cantjoin' => 'Can not join community',
+	'groups:cantleave' => 'Could not leave community',
+	'groups:removeuser' => 'Remove from community',
+	'groups:cantremove' => 'Cannot remove user from community',
+	'groups:removed' => 'Successfully removed %s from community',
+	'groups:addedtogroup' => 'Successfully added the user to the community',
+	'groups:joinrequestnotmade' => 'Could not request to join community',
+	'groups:joinrequestmade' => 'Requested to join community',
+	'groups:joined' => 'Successfully joined community!',
+	'groups:left' => 'Successfully left community',
+	'groups:notowner' => 'Sorry, you are not the owner of this community.',
+	'groups:notmember' => 'Sorry, you are not a member of this community.',
+	'groups:alreadymember' => 'You are already a member of this community!',
 	'groups:userinvited' => 'User has been invited.',
 	'groups:usernotinvited' => 'User could not be invited.',
 	'groups:useralreadyinvited' => 'User has already been invited',
@@ -236,25 +237,25 @@ View and reply to the discussion:
 	'groups:invite:remove:check' => 'Are you sure you want to remove this invitation?',
 	'groups:invite:body' => "Hi %s,
 
-%s invited you to join the '%s' group. Click below to view your invitations:
+%s invited you to join the '%s' Community. Click below to view your invitations:
 
 %s",
 
-	'groups:welcome:subject' => "Welcome to the %s group!",
+	'groups:welcome:subject' => "Welcome to the %s Community!",
 	'groups:welcome:body' => "Hi %s!
 
-You are now a member of the '%s' group! Click below to begin posting!
+You are now a member of the '%s' Community! Click below to begin posting!
 
 %s",
 
 	'groups:request:subject' => "%s has requested to join %s",
 	'groups:request:body' => "Hi %s,
 
-%s has requested to join the '%s' group. Click below to view their profile:
+%s has requested to join the '%s' community. Click below to view their profile:
 
 %s
 
-or click below to view the group's join requests:
+or click below to view the Community's join requests:
 
 %s",
 
@@ -262,54 +263,54 @@ or click below to view the group's join requests:
 	 * Forum river items
 	 */
 
-	'river:create:group:default' => '%s created the group %s',
-	'river:join:group:default' => '%s joined the group %s',
+	'river:create:group:default' => '%s created the Community %s',
+	'river:join:group:default' => '%s joined the Community %s',
 	'river:create:object:groupforumtopic' => '%s added a new discussion topic %s',
 	'river:reply:object:groupforumtopic' => '%s replied on the discussion topic %s',
 	'river:reply:view' => 'view reply',
 
-	'groups:nowidgets' => 'No widgets have been defined for this group.',
+	'groups:nowidgets' => 'No widgets have been defined for this community.',
 
 
-	'groups:widgets:members:title' => 'Group members',
-	'groups:widgets:members:description' => 'List the members of a group.',
-	'groups:widgets:members:label:displaynum' => 'List the members of a group.',
+	'groups:widgets:members:title' => 'Community members',
+	'groups:widgets:members:description' => 'List the members of a Community.',
+	'groups:widgets:members:label:displaynum' => 'List the members of a community.',
 	'groups:widgets:members:label:pleaseedit' => 'Please configure this widget.',
 
-	'groups:widgets:entities:title' => "Objects in group",
-	'groups:widgets:entities:description' => "List the objects saved in this group",
-	'groups:widgets:entities:label:displaynum' => 'List the objects of a group.',
+	'groups:widgets:entities:title' => "Objects in Community",
+	'groups:widgets:entities:description' => "List the objects saved in this Community",
+	'groups:widgets:entities:label:displaynum' => 'List the objects of a community.',
 	'groups:widgets:entities:label:pleaseedit' => 'Please configure this widget.',
 
 	'groups:forumtopic:edited' => 'Forum topic successfully edited.',
 
-	'groups:allowhiddengroups' => 'Do you want to allow private (invisible) groups?',
-	'groups:whocancreate' => 'Who can create new groups?',
+	'groups:allowhiddengroups' => 'Do you want to allow private (invisible) community?',
+	'groups:whocancreate' => 'Who can create new community?',
 
 	/**
 	 * Action messages
 	 */
-	'group:deleted' => 'Group and group contents deleted',
-	'group:notdeleted' => 'Group could not be deleted',
+	'group:deleted' => 'Community and Community contents deleted',
+	'group:notdeleted' => 'Community could not be deleted',
 
-	'group:notfound' => 'Could not find the group',
-	'grouppost:deleted' => 'Group posting successfully deleted',
-	'grouppost:notdeleted' => 'Group posting could not be deleted',
+	'group:notfound' => 'Could not find the community',
+	'grouppost:deleted' => 'Community posting successfully deleted',
+	'grouppost:notdeleted' => 'Community posting could not be deleted',
 	'groupstopic:deleted' => 'Topic deleted',
 	'groupstopic:notdeleted' => 'Topic not deleted',
 	'grouptopic:blank' => 'No topic',
 	'grouptopic:notfound' => 'Could not find the topic',
 	'grouppost:nopost' => 'Empty post',
-	'groups:deletewarning' => "Are you sure you want to delete this group? There is no undo!",
+	'groups:deletewarning' => "Are you sure you want to delete this community? There is no undo!",
 
 	'groups:invitekilled' => 'The invite has been deleted.',
 	'groups:joinrequestkilled' => 'The join request has been deleted.',
-	'groups:error:addedtogroup' => "Could not add %s to the group",
-	'groups:add:alreadymember' => "%s is already a member of this group",
+	'groups:error:addedtogroup' => "Could not add %s to the community",
+	'groups:add:alreadymember' => "%s is already a member of this community",
 
 	/**
 	 * ecml
 	 */
-	'groups:ecml:discussion' => 'Group Discussions',
-	'groups:ecml:groupprofile' => 'Group profiles',
+	'groups:ecml:discussion' => 'Community Discussions',
+	'groups:ecml:groupprofile' => 'Community profiles',
 );

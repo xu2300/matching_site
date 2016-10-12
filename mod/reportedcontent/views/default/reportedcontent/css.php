@@ -1,14 +1,12 @@
 <?php
-/**
- * Elgg reported content CSS
- *
- * Footer link CSS
- * 
- * @package ElggReportContent
- */
-
+  $site_url = elgg_get_site_url();
+  $logo_url = $site_url . "/mod/reportedcontent/graphics/reportit.gif";
 ?>
 /* Reported Content */
 .elgg-icon-report-this {
-	background: url(<?php echo elgg_get_site_url(); ?>mod/reportedcontent/graphics/icon_reportthis.gif) no-repeat left top;
+        width: 80px;
+        height: 20px;
+        background-image: url("<?php echo $logo_url; ?>");
+        background-repeat: no-repeat;
+
 }

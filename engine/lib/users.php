@@ -470,7 +470,7 @@ function elgg_user_hover_menu($hook, $type, $return, $params) {
 	if (!elgg_is_logged_in()) {
 		return;
 	}
-
+	
 	if (elgg_get_logged_in_user_guid() == $user->guid) {
 		$url = "profile/$user->username/edit";
 		$item = new \ElggMenuItem('profile:edit', elgg_echo('profile:edit'), $url);
@@ -481,10 +481,11 @@ function elgg_user_hover_menu($hook, $type, $return, $params) {
 		$item = new \ElggMenuItem('avatar:edit', elgg_echo('avatar:edit'), $url);
 		$item->setSection('action');
 		$return[] = $item;
+
 		$url = "questionnaire/add";
-	$item = new \ElggMenuItem('Questionnaire', elgg_echo('Questionnaire'), $url);
-	$item->setSection('action');
-	$return[] = $item;
+		$item = new \ElggMenuItem('Questionnaire', elgg_echo('Questionnaire'), $url);
+		$item->setSection('action');
+		$return[] = $item;
 	}
 
 	// prevent admins from banning or deleting themselves
@@ -521,12 +522,12 @@ function elgg_user_hover_menu($hook, $type, $return, $params) {
 		$item = new \ElggMenuItem('profile:edit', elgg_echo('profile:edit'), $url);
 		$item->setSection('admin');
 		$return[] = $item;
-
+		
 		$url = "avatar/edit/$user->username";
 		$item = new \ElggMenuItem('avatar:edit', elgg_echo('avatar:edit'), $url);
 		$item->setSection('admin');
 		$return[] = $item;
-
+		
 		$url = "settings/user/$user->username";
 		$item = new \ElggMenuItem('settings:edit', elgg_echo('settings:edit'), $url);
 		$item->setSection('admin');

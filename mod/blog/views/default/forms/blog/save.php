@@ -91,12 +91,12 @@ $comments_input = elgg_view('input/select', array(
 	'options_values' => array('On' => elgg_echo('on'), 'Off' => elgg_echo('off'))
 ));
 
-$tags_label = elgg_echo('tags');
-$tags_input = elgg_view('input/tags', array(
-	'name' => 'tags',
-	'id' => 'blog_tags',
-	'value' => $vars['tags']
-));
+// $tags_label = elgg_echo('tags');
+// $tags_input = elgg_view('input/tags', array(
+// 	'name' => 'tags',
+// 	'id' => 'blog_tags',
+// 	'value' => $vars['tags']
+// ));
 
 $access_label = elgg_echo('access');
 $access_input = elgg_view('input/access', array(

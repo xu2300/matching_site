@@ -276,7 +276,8 @@ function _elgg_admin_init() {
 
 	// configure
 	// upgrades
-	elgg_register_menu_item('page', array(
+	/*
+        elgg_register_menu_item('page', array(
 		'name' => 'upgrades',
 		'href' => 'admin/upgrades',
 		'text' => elgg_echo('admin:upgrades'),
@@ -284,6 +285,7 @@ function _elgg_admin_init() {
 		'priority' => 10,
 		'section' => 'configure'
 	));
+        */
 
 	// plugins
 	elgg_register_menu_item('page', array(
@@ -310,7 +312,7 @@ function _elgg_admin_init() {
 	// because it requires additional setup.
 
 	// configure utilities
-	elgg_register_admin_menu_item('configure', 'robots', 'configure_utilities');
+	// elgg_register_admin_menu_item('configure', 'robots', 'configure_utilities');
 
 	// we want plugin settings menu items to be sorted alphabetical
 	if (elgg_in_context('admin')) {
@@ -328,7 +330,7 @@ function _elgg_admin_init() {
 	}
 
 	// widgets
-	$widgets = array('online_users', 'new_users', 'content_stats', 'banned_users', 'admin_welcome', 'control_panel', 'cron_status');
+	$widgets = array('online_users', 'new_users','banned_users', 'control_panel');
 	foreach ($widgets as $widget) {
 		elgg_register_widget_type(
 				$widget,

@@ -28,7 +28,7 @@ if (empty($query) && $query != "0") {
 		'title' => elgg_echo('search:search_error'),
 		'content' => $body
 	));
-	echo elgg_view_page($title, $layout);
+	//echo elgg_view_page($title, $layout);
 
 	return;
 }

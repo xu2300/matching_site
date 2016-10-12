@@ -3,7 +3,7 @@
 	<name>HTMLawed</name>
 	<id>htmlawed</id>
 	<author>Core developers</author>
-	<version>1.9</version>
+	<version></version>
 	<category>bundled</category>
 	<category>security</category>
 	<description>Provides security filtering. Running a site with this plugin disabled is extremely insecure. DO NOT DISABLE.</description>

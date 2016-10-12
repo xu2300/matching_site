@@ -10,7 +10,7 @@
 		<td><?php echo $_SERVER['SERVER_SOFTWARE']; ?></td>
 	</tr>
 	<tr class="even">
-		<td><b><?php echo elgg_echo('admin:server:label:log_location'); ?> :</b></td>
-		<td><?php echo getenv('APACHE_LOG_DIR'); ?></td>
+		<!-- <td><b><?php echo elgg_echo('admin:server:label:log_location'); ?> :</b></td>
+		<td><?php echo getenv('APACHE_LOG_DIR'); ?></td> -->
 	</tr>
 </table>

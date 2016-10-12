@@ -24,6 +24,7 @@ $sort = get_input('sort', 'priority');
 $categories = array();
 
 foreach ($installed_plugins as $id => $plugin) {
+        
 	if (!$plugin->isValid()) {
 		if ($plugin->isActive()) {
 			// force disable and warn

@@ -29,7 +29,11 @@ if ($entity_stats) {
 					$a = "$k $a";
 				}
 			}
-			$rows .= <<< END
+			
+                   if($a == "Widgets" || $a == "item:object:questionnaire" || $a == "item:object:page_top" || $a == "Custom Profile Field" 
+                   || $a == "Custom Community Field") continue;
+
+                        $rows .= <<< END
 				<tr class="{$even_odd}">
 					<td class="column-one"><b>{$a}:</b></td>
 					<td>{$b}</td>

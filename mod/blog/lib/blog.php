@@ -100,7 +100,8 @@ function blog_get_page_content_list($container_guid = NULL) {
 		elgg_push_breadcrumb(elgg_echo('blog:blogs'));
 	}
 
-	elgg_register_title_button();
+	if(elgg_is_admin_logged_in())
+		elgg_register_title_button();
 
 	$return['content'] = elgg_list_entities($options);
 
@@ -129,7 +130,8 @@ function blog_get_page_content_friends($user_guid) {
 	elgg_push_breadcrumb($crumbs_title, "blog/owner/{$user->username}");
 	elgg_push_breadcrumb(elgg_echo('friends'));
 
-	elgg_register_title_button();
+	if(elgg_is_admin_logged_in())
+		elgg_register_title_button();
 
 	$options = array(
 		'type' => 'object',
@@ -220,6 +222,8 @@ function blog_get_page_content_archive($owner_guid, $lower = 0, $upper = 0) {
  */
 function blog_get_page_content_edit($page, $guid = 0, $revision = NULL) {
 
+	elgg_admin_gatekeeper();
+	
 	elgg_require_js('elgg/blog/save_draft');
 
 	$return = array(
@@ -262,7 +266,7 @@ function blog_get_page_content_edit($page, $guid = 0, $revision = NULL) {
 			elgg_require_js('elgg/blog/save_draft');
 
 			$content = elgg_view_form('blog/save', $vars, $body_vars);
-			$sidebar = elgg_view('blog/sidebar/revisions', $vars);
+			//$sidebar = elgg_view('blog/sidebar/revisions', $vars);
 		} else {
 			$content = elgg_echo('blog:error:cannot_edit_post');
 		}
@@ -276,7 +280,7 @@ function blog_get_page_content_edit($page, $guid = 0, $revision = NULL) {
 
 	$return['title'] = $title;
 	$return['content'] = $content;
-	$return['sidebar'] = $sidebar;
+	//$return['sidebar'] = $sidebar;
 	return $return;
 }
 

@@ -51,11 +51,11 @@ function blog_init() {
 	elgg_register_entity_type('object', 'blog');
 
 	// Add group option
-	add_group_tool_option('blog', elgg_echo('blog:enableblog'), true);
-	elgg_extend_view('groups/tool_latest', 'blog/group_module');
+	//add_group_tool_option('blog', elgg_echo('blog:enableblog'), true);
+	//elgg_extend_view('groups/tool_latest', 'blog/group_module');
 
 	// add a blog widget
-	elgg_register_widget_type('blog', elgg_echo('blog'), elgg_echo('blog:widget:description'));
+	//elgg_register_widget_type('blog', elgg_echo('blog'), elgg_echo('blog:widget:description'));
 
 	// register actions
 	$action_path = elgg_get_plugins_path() . 'blog/actions/blog';
@@ -186,17 +186,17 @@ function blog_set_url($hook, $type, $url, $params) {
  * Add a menu item to an ownerblock
  */
 function blog_owner_block_menu($hook, $type, $return, $params) {
-	if (elgg_instanceof($params['entity'], 'user')) {
-		$url = "blog/owner/{$params['entity']->username}";
-		$item = new ElggMenuItem('blog', elgg_echo('blog'), $url);
-		$return[] = $item;
-	} else {
-		if ($params['entity']->blog_enable != "no") {
-			$url = "blog/group/{$params['entity']->guid}/all";
-			$item = new ElggMenuItem('blog', elgg_echo('blog:group'), $url);
-			$return[] = $item;
-		}
-	}
+	// if (elgg_instanceof($params['entity'], 'user')) {
+	// 	$url = "blog/owner/{$params['entity']->username}";
+	// 	$item = new ElggMenuItem('blog', elgg_echo('blog'), $url);
+	// 	$return[] = $item;
+	// } else {
+	// 	if ($params['entity']->blog_enable != "no") {
+	// 		$url = "blog/group/{$params['entity']->guid}/all";
+	// 		$item = new ElggMenuItem('blog', elgg_echo('blog:group'), $url);
+	// 		$return[] = $item;
+	// 	}
+	// }
 
 	return $return;
 }

@@ -184,18 +184,13 @@
 	SITE MENU
 *************************************** */
 @font-face{
-	font-family: "Agency FB Bold Condensed";
-        src: url('<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.woff') format('woff');
-        /* src: url('<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.eot') format('embedded-opentype'),
-	     url('<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.woff') format('woff'),
-             url('<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.ttf') format('truetype'),
-             url('<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.svg') format('svg'); */
-             
+	font-family: "AlegreyaSansSC-Medium";
+	src: url("<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AlegreyaSansSC-Medium.ttf") format('truetype');
+		/*url("<?php echo elgg_get_site_url(); ?>mod/fortitude_theme/graphics/AgencyFBBold.woff") format('woff')*/;
 }
-
 .elgg-menu-site {
 	font-size: 30px;
-	font-family: "Agency FB Bold Condensed";
+	font-family: "AlegreyaSansSC-Medium", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: right;
 	left: 0;
 	top: 0;
@@ -204,10 +199,12 @@
 }
 .elgg-menu-site > li {
 	float: left;
-	border-top: 2px solid #69D2FF;
+	/*border-top: 2px solid #69D2FF;
 	border-bottom: 0px solid #69D2FF;
 	border-left: 2px solid #69D2FF;
-	border-right: 0px solid #69D2FF;
+	border-right: 0px solid #69D2FF;*/
+	width:150px;
+	text-align: center;
 }
 .elgg-menu-site > li > a {
 	background-color: #000000;
@@ -216,7 +213,7 @@
 	border-bottom: 2px solid #000000;
 	border-left: 2px solid #000000;
 	border-right: 2px solid #000000;
-	padding: 9px 18px 9px 18px;
+	padding: 9px 0px 9px 0px;
 }
 .elgg-menu-site > li > a:hover {
 	text-decoration: none;
@@ -239,7 +236,7 @@
 	text-align: left;
 	top: 42px;
 	margin-left: 0;
-	width: 180px;
+	width: 140px;
 
 	border-radius: 0 0 3px 3px;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
@@ -248,10 +245,10 @@
 	display: block;
 }
 .elgg-menu-site-more li {
-	width: 180px;
+	width: 140px;
 }
 .elgg-menu-site-more > li > a {
-	padding: 9px 18px 9px 18px;
+	padding: 9px 0px 9px 0px;
 	background-color: #000000;
 	color: #69D2FF;
 }

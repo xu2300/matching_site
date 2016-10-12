@@ -7,13 +7,13 @@
 			"callback"          => TRUE,
 			"new_app_link"      => "https://www.facebook.com/developers/apps.php", 
 		)
-		,
+		/*,
 		ARRAY(
                         "provider_id"       => "LinkedIn",
                         "provider_name"     => "LinkedIn",
                         "callback"          => TRUE,
                         "new_app_link"      => "https://www.linkedin.com/secure/developer?newapp=",
-                )
+                )*/
                 ,
 		ARRAY(
 			"provider_id"       => "Google",
@@ -22,7 +22,7 @@
 			"require_client_id" => TRUE, 
 			"new_app_link"      => "https://code.google.com/apis/console/", 
 		) 
-		,
+		/*,
 		ARRAY( 
 			"provider_id"       => "Twitter",
 			"provider_name"     => "Twitter", 
@@ -48,5 +48,5 @@
 			"provider_id"       => "AOL",
 			"provider_name"     => "AOL", 
 			"new_app_link"      => NULL, 
-		) 
+		)*/ 
 	);

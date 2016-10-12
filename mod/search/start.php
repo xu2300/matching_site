@@ -38,6 +38,7 @@ function search_init() {
 
 	// extend view for elgg topbar search box
 	elgg_extend_view('page/elements/header', 'search/header');
+        //elgg_unextend_view('page/elements/sidebar', 'search/header');
 
 	elgg_register_plugin_hook_handler('robots.txt', 'site', 'search_exclude_robots');
 }

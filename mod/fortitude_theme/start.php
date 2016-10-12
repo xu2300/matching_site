@@ -15,8 +15,10 @@ function aalborg_theme_init() {
 	// theme specific CSS
 	elgg_extend_view('css/elgg', 'aalborg_theme/css');
 
-	elgg_unextend_view('page/elements/header', 'search/header');
-	elgg_extend_view('page/elements/sidebar', 'search/header', 0);
+	//elgg_unextend_view('page/elements/header', 'search/header');
+	//elgg_extend_view('page/elements/sidebar', 'search/header', 0);
+        elgg_extend_view('page/elements/header', 'search/header');
+        //elgg_unextend_view('page/elements/sidebar', 'search/header');
 	
 	elgg_register_plugin_hook_handler('head', 'page', 'aalborg_theme_setup_head');
 

@@ -27,7 +27,8 @@ foreach ($entity_stats as $k => $entry) {
 				$a = "$k $a";
 			}
 		}
-		
+		if($a == "Widgets" || $a == "item:object:questionnaire" || $a == "item:object:about"|| $a == "item:object:page_top" || $a == "Custom Profile Field" 
+                   || $a == "Custom Community Field") continue;
 		echo <<< END
 			<tr class="{$even_odd}">
 				<td>{$a}:</td>
