@@ -1,5 +1,7 @@
 # matching_site
-###OSU CSE 5911	Capstone Design: Software Applications Project. Work with Xu Zhang,Yanjie Li,Jian Jin, Zicong Zheng
+###OSU CSE 5911	Capstone Design: Software Applications Project.
+
+####Work with Xu Zhang,Yanjie Li,Jian Jin, Zicong Zheng
 
 (1) PHP, Mysql and Elgg(an open source engine) are used as our site basement. It is a social networking website, users can add friends, join group, create community web page, upload game related comments or video.
 
